@@ -1,6 +1,6 @@
-Order coffee from the CLI.
+### Order coffee from the CLI.
 
-Easier than a subscription.
+### Easier than a subscription.
 
 # Background
 
@@ -53,6 +53,16 @@ cp cypress.json cypress.env.json
 6. There's a `dryRun` variable I've added which does everything other than clicking pay at the end of the checkout. Leave this as `true` until you're really sure the right stuff is in your basket with the right details.
 
 Now you can run `npm run order` to order coffee, or `npm run open` to open up the cypress GUI, which is nice for seeing the magic.
+
+You should see something including:
+
+```
+Running: extract.spec.js...                                                 (1 of 1)
+
+
+  Order
+    ✓ Coffee (13929ms)
+```
 
 ## How I use this
 
