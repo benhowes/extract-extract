@@ -4,23 +4,23 @@
 
 # Background
 
-I've had a weekly subscription to extract coffee for many moons now, however a problem I've had with this, and with all time-based subscriptions is that consumption of those products is never consistent over time. You either end up with a cupboard full of it, or run out all the time.
+I've had a weekly subscription to [Extract Coffee](https://extractcoffee.co.uk/) for many moons now. A constant problem I've had with this, and with all time-based subscriptions is that consumption of those products is never consistent over time. You either end up with a cupboard full of it or run out all the time.
 
-There are some cool ideas in this space, e.g. https://www.bottomless.com/, however they're in beta and I don't really want hardware for all of these things.
+There are some cool ideas in this space, e.g. https://www.bottomless.com/, however, they're in beta, and I don't really want hardware for all of these things.
 
-I'd love for there to be a simpler approach. Boiling the problem down, there needs to be some condition which triggers a buy signal. In a traditional subscription that's a time based buy signal, for bottomless, it's a weight threshold.
+I'd love for there to be a simpler approach. Boiling the problem down, there needs to be some condition which triggers a buy signal. In a traditional subscription that's a time-based buy signal, for bottomless, it's a weight threshold.
 
-I've made extract-extract so that the buy signal can be me either realising I'm low on coffee, or need to order extra.
+I've made extract-extract so that the buy signal can be me either realising I'm low on coffee or need to order extra.
 
-This is really just a proof-of-concept project! I'm trying it out for a while, to see if it works better for me.
+This project is really just a proof-of-concept! I'm trying it out for a while, to see if it works better for me.
 
 # Extract-Extract
 
-This mini-project is actually just a single cypress integration test, partly because I wanted to start using cypress more, and partly because in previous projects I've done like this, I've found being able to assert success at each step to be very helpful.
+This mini-project is just a single cypress integration test, partly because I wanted to start using cypress more, and partly because in previous projects I've done like this, I've found being able to assert success at each step to be very helpful.
 
 It's configured with a few environment variables.
 
-Currently I'm set up to order coffee from a widget on my phone as a 1-click (no longer under patent from amazon), which is easy enough to do when I am waiting for my aeropress to steep.
+Currently, I'm set up to order coffee from a widget on my phone as a 1-click (no longer under patent from amazon), which is easy enough to do when I am waiting for my aeropress to steep.
 
 ## Installation
 I've not packaged this up as an NPM package at the moment because it's just an experiment, however you can just clone this repo and run `npm i` from that dir to get going.
