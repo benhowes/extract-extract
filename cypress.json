@@ -1,0 +1,8 @@
+{
+    "projectId": "extractcoffee",
+    "username": "",
+    "password": "",
+    "productPage": "https://extractcoffee.co.uk/shop/coffee/cast-iron-espresso/",
+    "grindType": "whole-bean",
+    "dryRun": true
+}

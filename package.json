@@ -1,0 +1,16 @@
+{
+  "name": "extract-extract",
+  "version": "1.0.0",
+  "description": "Repeat order coffee without a subscription",
+  "main": "extract.js",
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^3.4.0"
+  },
+  "scripts": {
+    "order": "cypress run --spec cypress/integration/extract.spec.js",
+    "open": "cypress open"
+  },
+  "author": "Benjamin Howes",
+  "license": "MIT"
+}
