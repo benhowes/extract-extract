@@ -20,6 +20,9 @@ context('Order', () => {
     // Add to basket
     cy.get('.single_add_to_cart_button').click()
 
+    // Check the amount is as expected
+    cy.get('.woocommerce-Price-amount').contains(Cypress.env('expectedOrderTotal'))
+
     // Go to the checkout - Assume nearly all the defaults are correct
     cy.visit('https://extractcoffee.co.uk/checkout/').wait(2000)
     // Check terms box
@@ -27,13 +30,13 @@ context('Order', () => {
 
     // These final 2 steps may need to be skipped if we don't want to order
     // when testing.
-    if(!Cypress.env('dryRun', true)){
+    if(Cypress.env('dryRun')){
         // Pay
-        //cy.get("#place_order").click()
+        cy.get("#place_order").click()
 
         // Assert we see the complete page
         // The site seems really slow
-        cy.get("h1").contains("Thank You for your Order", {timeout: 15000})
+        cy.get("h1").contains("Thank You for your Order", {timeout: 25000})
     }
   })
 })

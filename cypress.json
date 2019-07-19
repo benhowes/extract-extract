@@ -4,5 +4,6 @@
     "password": "",
     "productPage": "https://extractcoffee.co.uk/shop/coffee/cast-iron-espresso/",
     "grindType": "whole-bean",
+    "expectedOrderTotal": "<overide with your expected total without currency symbol>",
     "dryRun": true
 }
