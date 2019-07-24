@@ -30,7 +30,7 @@ context('Order', () => {
 
     // These final 2 steps may need to be skipped if we don't want to order
     // when testing.
-    if(Cypress.env('dryRun')){
+    if(!Cypress.env('dryRun')){
         // Pay
         cy.get("#place_order").click()
 

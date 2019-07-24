@@ -2,6 +2,8 @@
 
 ### Easier than a subscription.
 
+![Automated coffee ordering on a button click](./img/overview.png)
+
 # Background
 
 I've had a weekly subscription to [Extract Coffee](https://extractcoffee.co.uk/) for many moons now. A constant problem I've had with this, and with all time-based subscriptions is that consumption of those products is never consistent over time. You either end up with a cupboard full of it or run out all the time.
@@ -51,6 +53,8 @@ cp cypress.json cypress.env.json
 5. The quantity is not configurable - extract-extract isn't really for bulk ordering!
 
 6. There's a `dryRun` variable I've added which does everything other than clicking pay at the end of the checkout. Leave this as `true` until you're really sure the right stuff is in your basket with the right details.
+
+7. Set a value for `expectedOrderTotal`, e.g. mine is `6.95` - just to help make sure you're not accidentally checking out more than you expected.
 
 Now you can run `npm run order` to order coffee, or `npm run open` to open up the cypress GUI, which is nice for seeing the magic.
 
